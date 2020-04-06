@@ -21,6 +21,20 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="3AO-8w-CGi"/>
                                 </connections>
                             </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kmG-tb-DKL">
+                                <rect key="frame" x="187" y="417.5" width="40" height="40.5"/>
+                                <color key="tintColor" red="0.7843137255" green="0.21176470589999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SYE-rC-LRZ"/>
+                                    <constraint firstAttribute="width" constant="40" id="ZOW-sZ-ZLR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxb-OP-pMd">
+                                <rect key="frame" x="0.0" y="833" width="414" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.7843137255" green="0.21176470589999999" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -28,10 +42,16 @@
                             <constraint firstItem="gjm-EF-ppM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SKO-X0-a1U"/>
                             <constraint firstAttribute="trailing" secondItem="gjm-EF-ppM" secondAttribute="trailing" id="SZ8-60-O0o"/>
                             <constraint firstItem="gjm-EF-ppM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YEv-cj-my9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lxb-OP-pMd" secondAttribute="trailing" id="cJz-iv-86W"/>
+                            <constraint firstItem="lxb-OP-pMd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gVU-Eg-6dc"/>
+                            <constraint firstItem="kmG-tb-DKL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhh-Xo-cjX"/>
+                            <constraint firstItem="lxb-OP-pMd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q1K-sj-FUF"/>
+                            <constraint firstItem="kmG-tb-DKL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-10" id="rqJ-Cp-f3b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="lxb-OP-pMd" id="A15-lM-sGC"/>
                         <outlet property="map" destination="gjm-EF-ppM" id="opa-4M-F9h"/>
                     </connections>
                 </viewController>
@@ -40,4 +60,7 @@
             <point key="canvasLocation" x="139" y="130"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+    </resources>
 </document>
